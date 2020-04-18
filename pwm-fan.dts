@@ -16,8 +16,8 @@
 				cooling-min-state = <0>;
 				cooling-max-state = <3>;
 				#cooling-cells = <2>;
-				pwms = <&pwm 0 10000 0>;
-				cooling-levels = <0 80 160 255>;
+				pwms = <&pwm 0 200 0>;
+				cooling-levels = <0 90 172 255>;
 			};
 		};
 	};
@@ -27,17 +27,17 @@
 		__overlay__ {
 			trips {
 				trip0: trip0 {
-					temperature = <44000>;
-					hysteresis = <5000>;
-					type = "active";
-				};
-				trip1: trip1 {
 					temperature = <50000>;
 					hysteresis = <2000>;
 					type = "active";
 				};
-				trip2: trip2 {
+				trip1: trip1 {
 					temperature = <55000>;
+					hysteresis = <2000>;
+					type = "active";
+				};
+				trip2: trip2 {
+					temperature = <60000>;
 					hysteresis = <2000>;
 					type = "active";
 				};
