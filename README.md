@@ -19,6 +19,12 @@ dtoverlay=pwm-fan
 
 The first overlay enables PWM on pin 12 (change if needed). The second line loads the pwm-fan overlay that defaults to pwm0
 
+## Graph!
+
+Created with `measure.sh` and mad OOo Calc skills
+
+![Temperature without vs with fan under 30s of cpuburn-a53](compare.png?raw=true "Temperature without vs with fan under 30s of cpuburn-a53")
+
 ## Todo
 * Changing thresholds through /sys/?
 * Add moar levels!
